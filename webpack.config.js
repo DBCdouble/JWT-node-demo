@@ -1,20 +1,19 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //自动添加js、css、favicon等依赖到新生成的html中
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); //为了避免打包生成的带有hash名字的文件冗余，在每次打包生成文件之前先清楚当前目录下的文件
-class MyPlugin {
-  // 构造函数
-  constructor(options) {
-    console.log("MyPlugin", options);
-  }
-  // 应用函数
-  apply(compiler) {
-    console.log(compiler);
-    // 绑定钩子事件
-    compiler.plugin("done", compilation => {
-      console.log(compilation);
-    });
-  }
-}
+// class MyPlugin {
+//   // 构造函数
+//   constructor(options) {
+//     console.log("MyPlugin", options);
+//   }
+//   // 应用函数
+//   apply(compiler) {
+//     // 绑定钩子事件
+//     compiler.plugin("done", compilation => {
+//       console.log(compilation);
+//     });
+//   }
+// }
 module.exports = {
   mode: 'development',
   entry: __dirname + '/client/index.js',
@@ -92,6 +91,6 @@ module.exports = {
     }),//自动添加js、css、favicon等依赖到新生成的html中
     new webpack.HotModuleReplacementPlugin(), //热加载插件
     new CleanWebpackPlugin(),
-    new MyPlugin()
+    // new MyPlugin()
   ]
 };
