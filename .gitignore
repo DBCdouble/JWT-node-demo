@@ -1,1 +1,7 @@
 node_modules
+
+.git
+
+.vscode
+
+pre-commit.js
