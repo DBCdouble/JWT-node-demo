@@ -1,3 +1,4 @@
+![alt](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568125319934&di=b1f65e3fcdfcf91d587ffe2b5ecf5810&imgtype=0&src=http%3A%2F%2Fimage.blog.zhouchenxi.cn%2F2017%2F03%2F20170308185903_17073.jpg)
 # JWT-node-demo
 基于JWT(jsonwebtoken)和node实现用户登录授权控制
 
