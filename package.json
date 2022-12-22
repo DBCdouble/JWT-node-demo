@@ -23,7 +23,7 @@
     "express": "^4.17.1",
     "http-proxy-middleware": "^0.19.1",
     "jsencrypt": "^3.0.0-rc.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1"
